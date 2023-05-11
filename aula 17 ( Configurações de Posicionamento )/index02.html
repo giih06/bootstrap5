@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>Configurações de Posicionamento</title>
+</head>
+
+<body>
+    <div class="container my-3 vstack gap-3 gap-lg-5"> <!-- vstack: o conteudo dessa div se torna uma pilha vertical, e eu posso agora adicionar um espaçamento nessa pilha vertical usando p "gap" com valores entre 0 e 5-->
+        <div class="p-5 bg-primary"></div>
+        <div class="p-5 bg-success"></div>
+        <div class="p-5 bg-warning"></div>
+    </div>
+    <hr>
+    <div class="container my-3 hstack gap-3 gap-lg-5"> <!--hstack: o conteudo dessa div se torna um empilhamento horizontal; a div se transofmra num container flex-box e as divs internas passam a ser itens flex-box; elas deixam de ser elemento de bloco ( ocupando a faixa horizontal inteira da pag) e passam a ser elementos mais semelhantes ao tipo inline-block -->
+        <div class="p-5 bg-primary"></div>
+        <div class="vr"></div>
+        <div class="p-5 bg-success"></div>
+        <div class="vr"></div> <!--linha horizontal de hr-->
+        <div class="p-5 bg-warning"></div>
+    </div>
+    <hr>
+    <div class="container my-3 hstack gap-3 gap-lg-5">
+        <div class="p-5 bg-primary"></div>
+        <div class="vr"></div>
+        <div class="p-5 bg-success"></div>
+        <div class="vr ms-auto"></div> 
+        <div class="p-5 bg-warning"></div>
+    </div>
+    <hr>
+    <div class="container my-3">
+        <div class="p-5 bg-primary"></div>
+        <div class="p-5 bg-success position-absolute"></div>
+        <div class="p-5 bg-warning"></div>
+    </div>
+
+
+</html>

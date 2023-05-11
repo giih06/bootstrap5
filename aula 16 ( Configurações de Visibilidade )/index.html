@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>Configurações de Visibilidade</title>
+
+    <style>
+        div.border {
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-danger p-5 "> </div>
+    <div class="col-3 bg-primary p-4 m-3 d-block"></div>
+    <div class="col-3 bg-success p-4 m-3 d-block"></div>
+    <div class="col-3 bg-warning p-4 m-3 d-block"></div>
+    <!-- a class d-block significa display block, ou seja, é um elemento de block, nao permitindo elemento aos seus lados e criando uma coluna de divs ( de cima p baixo )-->
+    <hr>
+    <div class="col-3 bg-black p-4 m-3 d-inline-block"></div>
+    <div class="col-3 bg-black p-4 m-3 d-inline-block"></div>
+    <div class="col-3 bg-black p-4 m-3 d-inline-block"></div>
+    <!-- d-inline-block significa display inline block e eu consigo fazer com que uma ddiv fique uma lo dado da outra ( da esquerda p direita ) e ainda respeite a margem superior e a largura de 3 colunas -->
+    <hr>    
+    <div class="col-3 bg-black p-4 m-3 d-none d-lg-block"></div>
+    <div class="col-3 bg-secondary p-4 m-3 d-block d-lg-none"></div>
+    <div class="col-3 bg-warning p-4 m-3 d-block"></div>
+    <hr>
+    <header class="p-3 text-bg-dark d-print-none"><!-- o d-print é o display da impressão-->
+        <div class="container">
+            <h1 class="display-1">Cabeçalho</h1>
+        </div>
+    </header>
+    <article class="container my-3">
+        <h1 class="mb-4">Título do Artigo</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos aliquam facilis excepturi explicabo exercitationem ex earum libero impedit omnis veritatis modi, inventore corporis, dolorum voluptates.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto aspernatur rem odio quidem iure explicabo, eaque veniam, distinctio id voluptates deserunt quos earum nemo! Ab.</p>
+        <p class="d-none d-print-block">Fonte meusite.com.br</p> <!-- O cabeçalho so apareceré na impressao-->
+    </article>
+    <hr>
+    <div class="col-3 m-3 p-4 bg-primary"></div>
+    <div class="col-3 m-3 p-4 bg-success invisible"></div> <!-- a div nao é mostrada mas o espaço que ela ocupa continua no fluxo de renderização-->
+    <div class="col-3 m-3 p-4 bg-warning"></div>
+    <hr>
+    <div class="container bg-info mt-3">
+        <div class="row">
+            <div class="border p-2 col-3 overflow-auto">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi laboriosam maxime aliquam, distinctio ducimus dolores excepturi recusandae eveniet ad possimus deleniti ipsa quae impedit qui quisquam quasi assumenda. Nobis, dolore.
+
+            </div>
+            <div class="border p-2 col-3 overflow-hidden">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis sequi voluptate dolores reprehenderit, saepe vel rem fuga, quae quaerat unde enim dicta minima tempora in. Nisi tempora consectetur quae error.
+            </div>
+            <div class="border p-2 col-3 overflow-visible">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ea facere beatae provident, accusamus maxime nam voluptates accusantium recusandae maiores? Nisi facilis dolore molestiae nostrum, animi quis ipsam? Assumenda, laudantium!
+            </div>
+            <div class="border p-2 col-3 overflow-scroll">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero atque a quis ab. At, veniam praesentium harum recusandae nihil officia eligendi ipsum rerum aperiam quasi veritatis cupiditate, fugiat accusamus dolorum.
+            </div>
+        </div>
+    </div>
+</body> 
+
+</html>

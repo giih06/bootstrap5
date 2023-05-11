@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>Formulários</title>
+</head>
+
+<body>
+    <div class="container p-5">
+        <form>
+            <div class="mb-3">
+                <label for="iemail" class="form-label">E-mail</label> <!--form-label: classe para o título do campo-->
+                <input type="email" id="iemail" class="form-control" readonly value="email@gmail.com"> <!--form-control: classe para o campo em si-->
+                <div class="form-text">Nunca compartilharemos seu e-mail com terceiros.</div> <!--form-text: classe para os textos do campo-->
+            </div>
+            <div class="mb-3">
+                <label for="isenha" class="form-label">Senha</label>
+                <input type="password" id="isenha" class="form-control form-control-sm" placeholder="digite sua senha">
+            </div>
+            <div class="mb-3 form-check">
+                <label for="ilembrar" class="form-check-label">Lembrar de mim</label>
+                <input type="checkbox" id="ilembrar" class="form-check-input">
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar</button>
+        </form>
+        <hr>
+        <input type="file" id="arquivo" class="form-control">
+        <input type="color" id="cor" class="form-control">
+        <hr>
+        <div class="mb-3">
+            <label for="" class="form-label">Cidade</label>
+            <input type="text" class="form-control" list="cidades" placeholder="Digite para buscar...">
+            <datalist id="cidades">
+                <option value="Cidade 1">Minas gerais</option>
+                <option value="Cidade 2"></option>
+                <option value="Cidade 3"></option>
+                <option value="Cidade 4"></option>
+                <option value="Cidade 5"></option>
+                <option value="Cidade 6"></option>
+            </datalist>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="Aula30.js" defer></script>
+    <title>Mensagens Flutuantes</title>
+</head>
+
+<body>
+    <div class="container my-5">
+        <b><button class="btn btn-primary" id="btnToast" data-bs-toggle="tooltip" data-bs-title="Este botão cria um novo toast." data-bs-html="true" data-bs-placement="top">Criar toast</button></b>
+
+        <div class="toast-container top-0 end-0 p-3" id="toastContainer"></div>
+
+
+        <div class="toast" id="toast">
+            <div class="toast-header">
+                <i class="bi-info-circle me-1"></i>
+                <strong class="me-auto">Informação</strong>
+                <button class="btn-close ms-auto" data-bs-dimiss="toast"></button>
+            </div>
+            <div class="toast-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis est quia maxime, vel excepturi dolores tempore officiis corrupti sunt explicabo!
+            </div>
+        </div>
+        <hr>
+        <div class="toast" data-bs-delay=""5000>
+            <div class="toast-body">
+                Chegaram novas mensagens em sua caixa postal.
+                <div class="mt-2 pt-2 border-top">
+                    <button class="btn btn-primary">Visualizar</button>
+                    <button class="btn btn-secondary" data-bs-dismiss="toast">Ignorar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
